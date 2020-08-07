@@ -40,11 +40,11 @@ public class PrimaryController {
            Connection con= DriverManager.getConnection("jdbc:mysql://24.152.40.30:3306/examenits", "its", "12345678");
            System.out.println("Funciona uwu/");
            Statement stm= con.createStatement();
-           ResultSet rs =stm.executeQuery("SELECT * FROM Persona");
+           ResultSet rs =stm.executeQuery("SELECT * FROM personas");
            while(rs.next()){
            Integer id =rs.getInt("idPersona");
-           String nombres = rs.getString("nombres");
-           String apellidos = rs.getString("apellidos");
+           String nombre = rs.getString("nombres");
+           String apellido = rs.getString("apellidos");
    
           
           listadatos.add(rs.getInt(1) + ""+ rs.getString(2) +" "+ rs.getString(3)+" \n");
