@@ -47,7 +47,7 @@ public class PrimaryController {
            String apellidos = rs.getString("apellidos");
    
           
-          listadatos.add(rs.getInt(1) + ""+ rs.getString(2) +" "+ rs.getString(3)+" /n");
+          listadatos.add(rs.getInt(1) + ""+ rs.getString(2) +" "+ rs.getString(3)+" \n");
        }
        }catch(Exception ex){
            System.out.println("Error al conectar :"+ex);
