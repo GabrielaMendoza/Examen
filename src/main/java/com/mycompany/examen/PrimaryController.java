@@ -6,6 +6,10 @@
 package com.mycompany.examen;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -18,7 +22,7 @@ import javafx.scene.control.TextArea;
  *
  * @author gabriela
  */
-public class PrimaryController implements Initializable {
+public class PrimaryController {
 
 
     @FXML
@@ -52,10 +56,7 @@ public class PrimaryController implements Initializable {
        Area.setText(listadatos+"");
     }
 
-    @Override
-    public void initialize(URL arg0, ResourceBundle arg1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
 
   
     }
