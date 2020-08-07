@@ -25,9 +25,6 @@ public class PrimaryController implements Initializable {
     private Button boton;
     @FXML
     private TextArea Area;
-    /**
-     * Initializes the controller class.
-     */
   
     
     @FXML
@@ -44,7 +41,7 @@ public class PrimaryController implements Initializable {
            Integer id =rs.getInt("idPersona");
            String nombres = rs.getString("nombres");
            String apellidos = rs.getString("apellidos");
-          // System.out.println(id+ " - "+nombres+" " +apellidos);
+   
           
           listadatos.add(rs.getInt(1) + ""+ rs.getString(2) +" "+ rs.getString(3)+" /n");
        }
